@@ -1,0 +1,11 @@
+C:\Users\adams\projects\namecon\namecon\conlib\bin\Debug\net7.0\conlib.deps.json
+C:\Users\adams\projects\namecon\namecon\conlib\bin\Debug\net7.0\conlib.dll
+C:\Users\adams\projects\namecon\namecon\conlib\bin\Debug\net7.0\conlib.pdb
+C:\Users\adams\projects\namecon\namecon\conlib\obj\Debug\net7.0\conlib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adams\projects\namecon\namecon\conlib\obj\Debug\net7.0\conlib.AssemblyInfoInputs.cache
+C:\Users\adams\projects\namecon\namecon\conlib\obj\Debug\net7.0\conlib.AssemblyInfo.cs
+C:\Users\adams\projects\namecon\namecon\conlib\obj\Debug\net7.0\conlib.csproj.CoreCompileInputs.cache
+C:\Users\adams\projects\namecon\namecon\conlib\obj\Debug\net7.0\conlib.dll
+C:\Users\adams\projects\namecon\namecon\conlib\obj\Debug\net7.0\refint\conlib.dll
+C:\Users\adams\projects\namecon\namecon\conlib\obj\Debug\net7.0\conlib.pdb
+C:\Users\adams\projects\namecon\namecon\conlib\obj\Debug\net7.0\ref\conlib.dll
