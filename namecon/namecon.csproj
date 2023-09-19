@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Conlib">
+      <HintPath>C:\Users\adams\projects\namecon\namecon\conlib\bin\Debug\net7.0\conlib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
