@@ -61,7 +61,7 @@ class MainClass{
     }
 
     public static void TestReplaceParams(){
-        string testIpnutSourceText = "\na\n\n  :param a:\n";
+        string testIpnutSourceText = "\na:\n\n  :param a:\n:param b: \n";
         Dictionary<string, string> testInputParamsDict = new Dictionary<string, string>{
             {
                 ":param a:",
@@ -72,6 +72,11 @@ class MainClass{
                 ":param b: b\nc\n"
             }
         };
-        string expectedResult = ""
+        string expectedResult = "\na:\n\n  :param a: a\n:param b: b\nc\n";
+        string result = ParamReplacer.ReplaceParams(
+            testIpnutSourceText,
+            testInputParamsDict
+        );
+        if (!(result == expectedResult)) throw new Exception("Expected result did not match the result.");
     }
 }

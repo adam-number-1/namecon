@@ -57,10 +57,11 @@ public class ParamReplacer
 
             result = (
                 result
-                + sourceText.Substring(previousInsertEndIndex, colonIndex)
+                + sourceText.Substring(previousInsertEndIndex, colonIndex - previousInsertEndIndex)
                 + replaceValue
             );
-            previousInsertEndIndex = colonIndex + replaceValue.Length;
+            // next insertions start after new line after last insert
+            previousInsertEndIndex = newNewlineIndex + 1;
             colonIndex = sourceText.IndexOf(':', previousInsertEndIndex);
         }
         result = result + sourceText.Substring(previousInsertEndIndex);
