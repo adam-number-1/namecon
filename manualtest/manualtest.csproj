@@ -11,6 +11,9 @@
     <Reference Include="Conlib">
       <HintPath>C:\Users\adams\projects\namecon\namecon\conlib\bin\Debug\net7.0\conlib.dll</HintPath>
     </Reference>
+    <Reference Include="Pathgen">
+      <HintPath>C:\Users\adams\projects\namecon\namecon\pathgen\bin\Debug\net7.0\pathgen.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

@@ -70,7 +70,7 @@ namespace pathgen{
             foreach (string dirPath in dirGen){
                 string[] filePaths = Directory.GetFiles(dirPath);
                 foreach (string filePath in filePaths){
-                    yield return filePath;
+                    if (filePath.EndsWith(".py")) yield return filePath;
                 }
             }
         }

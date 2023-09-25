@@ -1,6 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 // would be great to have the helper functionality in other namespaces
 using conlib;
+using pathgen;
 
 namespace Program;
 
@@ -9,6 +10,7 @@ class MainClass{
         TestGetParamDict();
         TestPrependLines();
         TestReplaceParams();
+        TestFilePathGen();
     }
 
     public static void TestGetParamDict(){
@@ -78,5 +80,28 @@ class MainClass{
             testInputParamsDict
         );
         if (!(result == expectedResult)) throw new Exception("Expected result did not match the result.");
+
+        testIpnutSourceText = ":param a:";
+        testInputParamsDict = new Dictionary<string, string>{
+            {
+                ":param a:",
+                ":param a: a\n"
+            },
+            {
+                ":param b:",
+                ":param b: b\nc\n"
+            }
+        };
+        expectedResult = ":param a: a\n";
+        result = ParamReplacer.ReplaceParams(
+            testIpnutSourceText,
+            testInputParamsDict
+        );
+        if (!(result == expectedResult)) throw new Exception("Expected result did not match the result.");
+    }
+
+    public static void TestFilePathGen() {
+        FilePathGen g = new FilePathGen(@"C:\Users\adams\projects\namecon\namecon\manualtest\test_a");
+        foreach (string p in g) Console.WriteLine($"filepath: {p}");
     }
 }
