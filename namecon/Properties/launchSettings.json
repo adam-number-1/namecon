@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "namecon": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Users\\adams\\projects\\namecon\\namecon\\manualtest\\test_a\\params.txt\r\nC:\\Users\\adams\\projects\\namecon\\namecon\\manualtest\\test_a"
+    }
+  }
+}

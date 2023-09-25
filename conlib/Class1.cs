@@ -74,6 +74,7 @@ public class ParamLoader
     public static Dictionary<string, string> GetParamDict(string paramFileText){
         Dictionary<string, string> result = new Dictionary<string, string>();
 
+        paramFileText = paramFileText.Replace("\r\n", "\n");
         int i = paramFileText.IndexOf(':');
         while(i != -1){
             if(
