@@ -33,6 +33,7 @@ public class MainClass
         {
             string fileText = File.ReadAllText(filePath);
             fileText = ParamReplacer.ReplaceParams(fileText, paramDict);
+            replacedFiles++;
             File.WriteAllText(filePath, fileText);
         }
 

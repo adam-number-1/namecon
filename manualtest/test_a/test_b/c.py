@@ -1,3 +1,3 @@
-	:param a:
-	:param b:
-	:param c:
+	:param a: aaaaa
+	:param b: bbbbb
+	:param c: ccccc
